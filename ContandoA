@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Defina uma variável inteira "contador" e inicialize-a com 0
+        int contador = 0;
+
+        // Solicite ao usuário que insira a frase
+        System.out.println("Digite uma frase:");
+        
+        // Leia a frase fornecida pelo usuário e armazene-a em uma variável "frase"
+        Scanner scanner = new Scanner(System.in);
+        String frase = scanner.nextLine();
+        
+        // Para cada caractere na frase:
+        for (int i = 0; i < frase.length(); i++) {
+            // Se o caractere atual for 'a' (ou 'A' para contar tanto 'a' minúsculo quanto 'A' maiúsculo):
+            if (frase.charAt(i) == 'a' || frase.charAt(i) == 'A') {
+                // Incremente o contador em 1
+                contador++;
+            }
+        }
+        
+        // Exiba o valor do contador, que representa o número de letras 'a' na frase
+        System.out.println("Número de letras 'a' na frase: " + contador);
+    }
+}
