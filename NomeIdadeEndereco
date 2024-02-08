@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        String nome = "Seu Nome";
+        int idade = 25; // Substitua pela sua idade
+        String endereco = "Seu Endereço";
+
+        // Imprime na tela seu nome
+        System.out.println("Nome: " + nome);
+
+        // Imprime na tela sua idade
+        System.out.println("Idade: " + idade + " anos");
+
+        // Imprime na tela seu endereço
+        System.out.println("Endereço: " + endereco);
+    }
+}
